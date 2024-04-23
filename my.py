@@ -1,8 +1,20 @@
-print("Hello world")
+from datetime import datetime
 
-print("Hello git")
+curency_date= '2020-10-09'
 
-print("pppppp")
+get_days_from_today=datetime.strptime(curency_date, '%Y-%m-%d').date()
 
-print("hhhhhhh")
-print("yyyyyyy")
+today_date=datetime.now().date()
+
+
+diff_day=((get_days_from_today-today_date).days)
+
+print(diff_day)
+
+
+
+
+
+
+
+
